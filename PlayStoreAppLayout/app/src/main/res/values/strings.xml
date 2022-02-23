@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PlayStoreAppLayout</string>
+    <string name="playstore_display_name">1. Messenger</string>
+    <string name="app_developer">Facebook</string>
+    <string name="icon_content_description">App icon</string>
+</resources>
