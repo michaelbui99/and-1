@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/dark_primary"
     android:paddingHorizontal="30dp"
-    android:paddingTop="200dp"
+    android:paddingTop="100dp"
     tools:context=".MainActivity">
 
     <EditText
@@ -46,6 +46,25 @@
         android:layout_marginTop="60dp"
         android:background="@color/light_primary"
         android:text="@string/button_login_text"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/image_switch"
+        />
+
+    <ImageView
+        android:id="@+id/meme_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/image_switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_launcher_foreground"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

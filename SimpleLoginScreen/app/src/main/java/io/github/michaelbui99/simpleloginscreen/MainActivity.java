@@ -1,12 +1,14 @@
 package io.github.michaelbui99.simpleloginscreen;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,9 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText emailInput;
     private EditText passwordInput;
+    private SwitchCompat imageSwitch;
+    private ImageView memeImage;
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -30,8 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
         Button loginButton = findViewById(R.id.button_login);
 
-        loginButton.setOnClickListener(this::onLogin);
+        imageSwitch = findViewById(R.id.image_switch);
+        memeImage = findViewById(R.id.meme_image);
 
+        loginButton.setOnClickListener(this::onLogin);
+        imageSwitch.setOnClickListener(this::onChecked);
     }
 
 
@@ -47,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void onChecked(View v){
+        if (!imageSwitch.isChecked()){
+            memeImage.setImageResource(R.drawable.ic_launcher_foreground);
+        }else{
+            memeImage.setImageResource(R.drawable.grumpy_cat);
+        }
+    }
+
     public boolean credentialsAreCorrect() {
         return emailInput.getText().toString().toLowerCase().equals(LOGIN_EMAIL.toLowerCase()) &&
                 passwordInput.getText().toString().toLowerCase().equals(LOGIN_PASSWORD.toLowerCase());
@@ -56,4 +70,5 @@ public class MainActivity extends AppCompatActivity {
         emailInput.setText("");
         passwordInput.setText("");
     }
+
 }

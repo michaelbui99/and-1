@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimpleLoginScreen</string>
+    <string name="hint_password">Kodeord</string>
+    <string name="message_login_failed">Forkert email eller kodeord</string>
+    <string name="message_login_success">Du er nu logget ind</string>
+</resources>
