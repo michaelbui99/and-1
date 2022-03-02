@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     private void assignOnNumberToChildrenElements(LinearLayout view) {
         for (int i = 0; i < view.getChildCount(); i++) {
             Button button = (Button) view.getChildAt(i);
-            if (button.getId() != R.id.button_clear || button.getId() != R.id.button_plus) {
+            if (button.getId() != R.id.button_clear && button.getId() != R.id.button_plus) {
                 button.setOnClickListener(this::onNumberButtonClick);
             }
         }
