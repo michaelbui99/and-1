@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout buttonContainer1 = findViewById(R.id.button_container_1);
         LinearLayout buttonContainer2 = findViewById(R.id.button_container_2);
         LinearLayout buttonContainer3 = findViewById(R.id.button_container_3);
+        LinearLayout buttonContainer4 = findViewById(R.id.button_container_4);
+
         Button clearButton = findViewById(R.id.button_clear);
         Button plusButton = findViewById(R.id.button_plus);
         Button equalsButton = findViewById(R.id.button_equals);
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         assignOnNumberToChildrenElements(buttonContainer1);
         assignOnNumberToChildrenElements(buttonContainer2);
         assignOnNumberToChildrenElements(buttonContainer3);
+        assignOnNumberToChildrenElements(buttonContainer4);
 
         clearButton.setOnClickListener(this::onClearClick);
         plusButton.setOnClickListener(this::onPlusClick);
