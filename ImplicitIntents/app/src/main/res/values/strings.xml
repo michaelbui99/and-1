@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImplicitIntents</string>
+    <string name="send_email_button_text">Send email</string>
+</resources>
