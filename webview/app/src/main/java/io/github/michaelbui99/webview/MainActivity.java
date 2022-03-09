@@ -33,7 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onGo(View v) {
-        String url = "https://" + urlInput.getText().toString();
+        String url ="";
+        if (!urlInput.getText().toString().contains("https://")){
+            url = "https://" + urlInput.getText().toString();
+        }else{
+            url = urlInput.getText().toString();
+        }
         webView.loadUrl(url);
         urlInput.setText(webView.getUrl());
     }
