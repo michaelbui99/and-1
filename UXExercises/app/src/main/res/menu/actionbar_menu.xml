@@ -3,9 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/actionbar_toast"
+        android:icon="@drawable/ic_action_name"
+        android:title="@string/toast"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
         android:id="@+id/view_settings"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="@string/settings"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/view_profile"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="@string/profile"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/view_ads"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="@string/ads"
         app:showAsAction="never"
         />
 </menu>
