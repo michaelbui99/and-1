@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PersistenceRoom</string>
+    <string name="add_note">Add note</string>
+    <string name="delete_all">Delete all</string>
+</resources>
